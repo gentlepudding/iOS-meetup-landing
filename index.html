@@ -6,14 +6,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <span>the code</span>
-        <nav>
-            <a href="#"><span>Формат</span></a>
-            <a href="#"><span>События</span></a>
-            <a href="#"><span>О нас</span></a>
+    <header class="header">
+        <span class="name">the code</span>
+        <nav class="menu">
+            <a href="#" class="menu__item">Формат</a>
+            <a href="#" class="menu__item">События</a>
+            <a href="#" class="menu__item">О нас</a>
         </nav>
-        <div>
+        <div class="radio">
             <input type="radio">
             <input type="radio">
             <input type="radio">
@@ -22,62 +22,63 @@
     </header>
     <main>
         <section class="section section-1">
-            <div>
-                <span>23</span>
-                <span>/11</span>
+            <div class="date">
+                <date class="date__day">23</date>
+                <date class="date__month">/ 11</date>
             </div>
-            <span>the code: frontend #1</span>
-            <span>Яндекс Хохрякова, 10</span>
-            <span> Приносите свои ноутбуки</span>
+            <span class="section-1__name">the code: frontend #1</span>
+            <span class="section-1__address">Яндекс Хохрякова, 10</span>
+            <span class="section-1__condition">Приносите<br> свои ноутбуки</span>
         </section>
         <section class="section section-2">
-            <h1>the code: iOS<span>#1</span></h1>
-            <img src="image.jpeg">
+            <h1 class="main-header">the code: iOS<span class="number">#1</span></h1>
+            <img src="image.jpeg" class="section-2__image">
+            <div class="gradient gradient-1"></div>        
         </section>
         <article class="section section-3">
-            <h2>Формат</h2>
-            <p>
+            <h2 class="subhead">Формат</h2>
+            <p class="text">
                 Яндекс приглашает iOS-разработчиков обсудить профессиональные вопросы в Екатеринбурге. 
                 Встреча начнётся с докладов — спикеры расскажут об использовании AI в приложениях для iOS
                 и о тестировании ресурсопотребления. После выступлений можно будет пообщаться с участниками за чашкой кофе или чая.
                 Если у вас есть интересные темы для обсуждения, вы хотите рассказать о чём-то сложном и необычном в своих проектах или ищете ответы на определённые вопросы — укажите это в регистрационной анкете.
                 Участие бесплатное, но количество мест ограничено, поэтому нужно заранее зарегистрироваться и получить приглашение.
             </p>
+            <div class="gradient gradient-2"></div> 
         </article>
         <section class="section section-4">
-            <h2>События</h2>
+            <h2 class="subhead">События</h2>
             <div class="events">
-                <div>
-                    <span>the code: iOS
-                        <span>#1</span>
-                        <span>23/10</span>
-                    </span>
-                </div>
-                <div>
-                    <span>the code: frontend</span>
-                    <span>#0</span>
-                    <span>23/09</span>
-                </div>
-                <div>
-                    <span>the code: backend</span>
-                    <span>#0</span>
-                    <span>23/08</span>
-                </div>
-                <div>
+                <div class="text-event">
                     <span>the code: iOS</span>
-                    <span>#0</span>
-                    <span>23/07</span>
+                    <span class="number">#1</span>
+                    <date class="text-event__date">23/10</date>
+                </div>
+                <div class="text-event">
+                    <span>the code: frontend</span>
+                    <span class="number">#0</span>
+                    <date class="text-event__date">23/09</date>
+                </div>
+                <div class="text-event">
+                    <span>the code: backend</span>
+                    <span class="number">#0</span>
+                    <date class="text-event__date">23/08</date>
+                </div>
+                <div class="text-event">
+                    <span>the code: iOS</span>
+                    <span class="number">#0</span>
+                    <date class="text-event__date">23/07</date>
                 </div>
             </div>
         </section>
         <section class="section section-5">
-            <h2>О нас</h2>
-            <span>Клёвые ребята</span>
+            <h2 class="subhead">О нас</h2>
+            <span class="text">Клёвые ребята</span>
         </section>
     </main>
-    <footer>
-        <span>the code</span>
-        <div>
+    <footer class="footer">
+        <span class="name">the code</span>
+        <div class="radio">
             <input type="radio">
             <input type="radio">
             <input type="radio">
