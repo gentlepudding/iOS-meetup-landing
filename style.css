@@ -1,17 +1,21 @@
-body {
-    background-color: #f0f0f0;
-
-    font-family: Helvetica, sans-serif;
-    font-size: 16px;
+:root {
+    --bg-color: #f0f0f0;
 
     --font-color-medium: #2c2c2c;
     --side-margin: 100px;
     --default-border: 2px solid var(--font-color-medium);
 }
 
-.header {
-    align-items: baseline;
+body {
+    background-color: var(--bg-color);
 
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+
+    max-width: 1440px;
+}
+
+.header {
     border-bottom: var(--default-border);
     color: var(--font-color-medium);
     font-weight: bold;
@@ -38,11 +42,22 @@ body {
 .menu__item {
     text-decoration: none;
     color: var(--font-color-medium);
+    line-height: 30px;
 }
 
-.radio {
-    flex: 0 1 200px;
-    text-align: right;
+.dots {
+    flex: 0 1 150px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+.dots__dot {
+    width: 26px;
+    height: 26px;
+    background-color: #d8d8d8;
+    border: solid 1px #979797;
+    border-radius: 50%;
 }
 
 .section {
@@ -114,6 +129,9 @@ body {
     object-position: 50% 50%;
 
     flex: 2 1;
+
+    border: 40px solid var(--bg-color);
+    margin: -40px;
 }
 
 .gradient {
@@ -125,12 +143,12 @@ body {
 
 .gradient-1 {
     background:
-    linear-gradient(45deg, #dc143c 45px, transparent 45px)64px 64px,
-    linear-gradient(45deg, #dc143c 45px, transparent 45px,transparent 91px, #fff 91px, #fff 135px, transparent 135px),
-    linear-gradient(-45deg, #dc143c 23px, transparent 23px, transparent 68px,#dc143c 68px,#dc143c 113px,transparent 113px,transparent 158px,#dc143c 158px);
+    linear-gradient(45deg, #dc143c 45px, transparent 45px) 64px 64px,
+    linear-gradient(45deg, #dc143c 45px, transparent 45px, transparent 91px, var(--bg-color) 91px, var(--bg-color) 135px, transparent 135px),
+    linear-gradient(-45deg, #dc143c 23px, transparent 23px, transparent 68px,#dc143c 68px,#dc143c 113px, transparent 113px, transparent 158px,#dc143c 158px);
     background-size: 128px 128px;    
 
-    margin: -100px 0 200px 150px;
+    margin: -100px 0 200px var(--side-margin);
 
     opacity: .7;    
 }
